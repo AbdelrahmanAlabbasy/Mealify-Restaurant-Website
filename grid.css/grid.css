@@ -1,0 +1,929 @@
+body{
+    margin: 0;
+    font-family: "alegreya";
+}
+
+p{
+    color: #7f7f90;
+}
+h1{
+    font-family:"amatic sc";
+}
+h2{
+    font-family:"amatic sc";
+}
+h3{
+    font-family:"amatic sc";
+}
+h4{
+    font-family:"amatic sc";
+}
+h5{
+    font-family:"amatic sc";
+}
+h6{
+    font-family:"amatic sc";
+}
+.location-img{
+    overflow: hidden;
+    width: 100%;
+}
+.location-img img{
+    width: 100%;
+}
+.header{
+    background-color: white;
+    display: flex;
+    height: auto;
+    /* padding-left: 15px; */
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 32%;
+    box-shadow: 1px -4px 12px 0px;
+    /* position: sticky;
+    top: 0;
+    z-index: 500; */
+}
+.logo{
+    padding: 15px 0 15px 80px;
+}
+.red-dot{
+    color:  #ce1212;
+}
+.header ul{
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+}
+.header li{
+    list-style:none;
+    font-size: larger;
+    font-weight: 600;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+.nav a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ce1212;
+    bottom: -5px;
+    left: 0px;
+    transition-duration: 0.7s;
+}
+.nav a:hover::after{
+    width: 100%;
+}
+.home{
+    background-color: #eeee;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    height: auto;
+    /* padding-bottom: 90px; */
+}
+.home-image{
+    width: 40%;
+    /* padding-left: 50px;
+    padding-top: 30px; */
+}
+.home-image img{
+    width: 100%;
+    filter:drop-shadow(-2px 41px 17px #000a);
+}
+.home-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* padding: 30px; */
+    width: 60%;
+}
+.home-left h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.home-left p{
+    font-size: 20px;
+}
+.btns{
+    display: flex;
+    gap: 40px;
+}
+.btn1{
+    border-radius: 0px 20px 20px 20px;
+    background-color: #ce1212;
+    height: auto;
+    align-items: center;
+    display: flex;
+    padding: 12px 25px;
+    color: white;
+}
+.btns a{
+    text-decoration: none;
+}
+.btn-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 10px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+.icon{
+    font-size: 18px;
+    position: relative;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 33px;
+    border: solid white 15px;
+    /* color: black; */
+
+}
+/* .icon::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 10px;
+    background-color: white;
+    width: 30px;
+    height: 20px;    
+    text-align: center;
+} */
+ .btn-video:hover{
+    color: red;
+ }
+ #chefs{
+    transition-duration: 1.5s;
+ }
+ .chefs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+ }
+ .chefs span{
+    color:red;
+ }
+ .chefs h1{
+    font-size: 50px;
+ }
+ /* .chefs p{
+    font-size: 25px;
+ } */
+ .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    padding: 40px;
+    gap: 30px;
+    justify-content: center;
+    /* padding: 75px 150px; */
+    /* margin: 100px 0px; */
+ }
+ .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(calc(100% - 60px* 2) / 3);
+    box-shadow: 0px 1px 18px 0px #888888;
+    border-radius: 9px;
+    height: auto;
+    transition-duration: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #7f7f9048;
+    gap: 25px;
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    transform: translateX(100px);
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+    color: #271e03;
+    padding: 15px 15px;
+}
+.card:hover{
+    scale: 1.1;
+}
+.card:hover .social-icons{
+    /* right: 1%; */
+    transform: translateX(-20px);
+
+}
+.img-holder{
+    width: 100%;
+    position: relative;
+}
+.img-holder img{
+    width: 100%;
+    border-radius: 9px;
+}
+.img-holder::after{
+    content: "";
+    background: url(../white.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    /* transform: translate(-100%, 162px); */
+    width: 100%;
+    left: 0px;
+    bottom: -13px;
+    height: 45px;
+}
+.img-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.master-chef{
+    font-size: 20px;
+}
+.chef-p{
+    font-size: 19px;
+}
+.img-text h1{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.prof{
+    margin: 10px;
+}
+.gallery span{
+    color: red;
+}
+.gallery > h1{
+    font-size: 60px;
+    margin-top: 12px;
+}
+.gallery{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 150px; */
+    padding-bottom: 100px;
+}
+.gallery-imgs{
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    width: 70%;
+    gap: 30px;
+}
+.meals img{
+    width: 100%;
+    transition-duration: 0.7s;
+}
+.col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.meals{
+    border: white solid 6px;
+    position: relative;
+    overflow: hidden;
+}
+.meals:hover img{
+    transform: scale(1.3);
+}
+.overlay{
+    background-color: #3a393545;
+    position: absolute;
+    bottom: -80px;
+    height: 0%;
+    z-index: 2;
+    width: 100%;
+    scale: 1.1;
+    transition-duration: 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+.meals:hover .overlay{
+    height: 100%;
+    bottom: 0px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 40px ;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.contact h1{
+    margin-top: 0px;
+}
+.contact span{
+    color: red;
+}
+.contact h1{
+    font-size: 50px;
+}
+.contact p{
+    font-size: 25px;
+}
+
+.form-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+.form-inline{
+    padding: 20px;
+    width: 65%;
+    box-shadow: 0 0 1.875rem #00000014;
+    height: auto;
+}
+.form1{
+    width: 92%;
+    margin-top: 15px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 3px;
+}
+.msg{
+    height: 35px;
+    margin-bottom: 10px;
+}
+.submit{
+    background-color: #ff305b;
+    transition-duration: 0.7s;
+    border-radius: 4px;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+}
+.submit:hover{
+    background-color: #ec2403;
+}
+.sumbit-div{
+    text-align: center;
+}
+.flex-div{
+    display: inline;
+    width: 100%;
+}
+.kkk{
+    width: 44.3%;
+    margin-right: 7.5px;
+    border-radius: 3px;
+    height: 35px;
+    padding: 8px;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    gap: 10px;
+    margin: 20px 0;
+}
+.contact-cards{
+    width: 49%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.card-txt p{
+    margin-bottom: 3px;
+    font-weight: 600;
+    color: black;
+}
+.card-txt h6{
+    margin-top: 3px;
+    font-size: 13px;
+    font-family: "sans serif";
+    font-weight: 100;
+}
+.icons{
+    color: white;
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-width: 0px;
+    margin: 10px 10px 20px 10px;
+}
+.footer{
+    width: 100%;
+    background-color: #030203;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 30px;
+    justify-content: center ;
+}
+.mealify{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+}
+.logo-icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo-icon span{
+    color: red;
+}
+.logo-icon h1{
+    color: white;
+    font-family: sans-serif;
+}
+
+.logo-img{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px  ;
+
+}
+.logo-img img{
+    width: 100%;
+}
+.mealify p{
+    color: white;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.mealify h2{
+    color: white;
+    font-family: sans-serif;
+    border-bottom: white 2px solid;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ii{
+    width: 25%;
+    color: white;
+}
+.list-icon i{
+    width: 100%;
+}
+.mealify ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+}
+.mealify li i{
+    color: white;
+    padding-right: 20px;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 15px;
+}
+.sub h2{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.sub p{
+    color: white;
+    font-size: 15px;
+}
+.last-form{
+    height: 25px;
+    padding: 8px;
+    width: 70%;
+}
+.sub a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 12px;
+}
+.input-div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+.sub h3{
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 3px;
+}
+.sub ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.8;
+    font-size: 20px;
+    justify-content: start;
+    padding-left: 0;
+    gap: 7px;
+}
+.sub li{
+    width: 48%;
+    transition-duration: 0.4s;
+}
+.sub li:hover{
+    background-color: #222222;
+    transform: translateX(10px);
+}
+.intouch{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 20%;
+    justify-content: left;
+    padding: 20px;
+}
+.intouch h2{
+    color: white;
+    font-family: sans-serif;
+}
+.intouch ul{
+    list-style:none;
+    color: white;
+    padding-left: 0;
+    line-height: 1.8;
+}
+.intouch li i{
+    color: red;
+    margin-right: 7px;
+}
+.img-text h1{
+    font-size: 35px;
+}
+
+
+
+/* Mobile */
+
+/* @media (max-width: 783px) {
+    .home-image {
+        width: 100%;
+    }
+    .home-left {
+        width: 100%;
+        align-items: center; 
+}
+.header{
+    gap: 15%;
+}
+} */
+/* @media (max-width:1008px){
+    .card{
+        width: 47%;
+    }
+} */
+/* 
+@media (max-width:598px) {
+    .card{
+        width: 100%;
+    }
+    .card-container{
+        gap: 45px;
+    }
+} */
+
+/* @media (max-width: 1067.20px) {
+   
+    .chef-p{
+        font-size: medium;
+        text-align: center;
+    }
+    
+} */
+
+
+
+
+
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 560px) {
+    
+    .header {
+        gap: 0px;
+    }
+    .sub h2{
+        text-align: center;
+    }
+    
+
+    .header ul {
+        flex-wrap: wrap;
+    }
+    .logo {
+        padding: 15px 0 15px 15px;
+    }
+    .home-image {
+        width: 100%;
+    }
+    .home-left {
+        width: 100%;
+        align-items: center; 
+    }
+    .card{
+        width: 90%;
+    }
+    .home-left p {
+        text-align: center;
+    }
+    .gallery-imgs{
+        flex-wrap: wrap;
+    }
+    .meals{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+    .overlay h1{
+        font-size: 40px;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home-left h1 {
+        font-size: 39px;
+        text-align: center;
+    }   
+    .contact-cards{
+        width: 90%;
+        justify-content: left;
+    }
+    .form-inline{
+        width: 100%;
+    }
+    .form1{
+        width: 98.5%;
+        padding: 8px;
+    }
+    .kkk{
+        width: 98.5%;
+        margin-top: 15px;
+        padding: 6px;
+    }
+    .contact-form{
+        justify-content: center;
+    } 
+    .contact > h1{
+        font-size: 40px;
+    }
+    .mealify{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sub{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container{
+        gap: 44px;
+    }
+
+    .intouch{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-img img{
+        width: 77%;
+    }
+    .logo-icon h1{
+        font-size: 22px;
+    }
+    .mealify li i {
+        font-size: 29px;
+    }
+    .sub{
+        padding: 30px;
+    }
+    .sub ul{
+        margin-left: -15px;
+    }
+    .sub a {
+        padding: 12px;
+        width: 36%;
+    }
+    .sub p {
+        text-align: center;
+    }
+    .intouch ul {
+        line-height: 2.8;
+    }
+    .footer{
+        gap: 0px;
+    }
+    .gallery > h1 {
+        font-size: 49px;
+    }
+    .chefs h1 {
+        font-size: 39px;
+    }
+    .chefs h1 {
+        font-size: 39px;
+        text-align: center;
+    }
+    .chef-p {
+        text-align: center;
+    }
+    .card-txt p{
+        font-size: 21px;
+    }
+    .intouch ul {
+        font-size: 14px;
+    }
+}
+
+/* Small Screens */
+
+@media (min-width: 561px) and (max-width: 768px) {
+    .home-image {
+        width: 100%;
+    }
+    .home-left {
+        width: 100%;
+        align-items: center; 
+    }
+    .header{
+        gap: 15%;
+    }
+    .card-container{
+        gap: 44px;
+    }
+    .card{
+        width: 90%;
+    }
+    .home-left h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo{
+    padding: 15px 0 15px 15px;
+    }
+    .home-left p {
+        text-align: center;
+    }
+    .overlay h1{
+        font-size: 32px;
+    }
+    .fc h1{
+        font-size: 23px;
+    }
+    
+    .contact-cards{
+        width: 90%;
+        justify-content: left;
+    }
+    .form-inline{
+        width: 100%;
+    }
+    .form1{
+        width: 98.5%;
+        padding: 8px;
+    }
+    .kkk{
+        width: 98.5%;
+        margin-top: 15px;
+        padding: 6px;
+    }
+    .contact-form{
+        justify-content: center;
+    }
+
+    .mealify{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sub{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .intouch{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-img img{
+        width: 77%;
+    }
+    .logo-icon h1{
+        font-size: 22px;
+    }
+    .mealify li i {
+        font-size: 29px;
+    }
+    .sub{
+        padding: 30px;
+    }
+    .sub ul{
+        margin-left: 100px;
+    }
+    .sub a {
+        padding: 12px;
+        width: 36%;
+    }
+    .sub p {
+        text-align: center;
+    }
+    .intouch ul {
+        line-height: 2.8;
+    }
+    .footer{
+        gap: 0px;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .card{
+        width: 47%;
+    }
+    .chef-p{
+        font-size: medium;
+        text-align: center;
+    }
+    .fc h1{
+        font-size: 32px;
+    }
+    
+  
+}
+
+/* Large Screens */
+
+@media (min-width: 993px) and (max-width:1200px) {
+    .fc h1{
+        font-size: 32px;
+    }
+}
